@@ -67,3 +67,15 @@ We need to scroll on the chromdriver page to get more images...
 The more the number of times we scroll on the page, the more images we get. Apparently, it more like 3 instances of high scroll.
 After so much trial and error, we can now obtain ~800 image tags from the page.
 ##############################################################################################################
+[IDEA] Can we maybe screenshot and do a manga scraper? The dataset will be pretty large too.....Lots to scrape.....
+Is it allowed though?
+##############################################################################################################
+Nested progress bars do not work in Jupyter Notebooks. At least with this:
+from tqdm.auto import trange
+from time import sleep
+
+for i in trange(4, desc='1st loop'):
+    for j in trange(5, desc='2nd loop'):
+        for k in trange(50, desc='3rd loop', leave=False):
+            sleep(0.01)
+##############################################################################################################
